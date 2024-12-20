@@ -79,3 +79,30 @@ console.log(humanChoice, computerChoice);
 console.log(humanScore, computerScore);
 
 
+const body = document.querySelector("#body");
+
+const container = document.createElement("container");
+container.classList.add("boxes");
+
+const rockScreen = document.createElement("rockScreen");
+rockScreen.textContent = "Rock";
+rockScreen.addEventListener("click", () => {
+    humanChoice = "rock"
+});
+
+const scissorScreen = document.createElement("scissorScreen");
+scissorScreen.textContent = "Scissor";
+scissorScreen.addEventListener("click", () => {
+    humanChoice = "scissor"
+});
+
+const paperScreen = document.createElement("paperScreen");
+paperScreen.textContent = "Paper";
+paperScreen.addEventListener("click", () => {
+    humanChoice = "paper"
+});
+
+container.appendChild(rockScreen, scissorScreen, paperScreen);
+
+const div = document.createElement("div");
+const display = 
